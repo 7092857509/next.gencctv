@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Next.Gen CCTV — Security, Installation, Sales & Support</title>
+  <meta name="description" content="Next.Gen CCTV — Professional CCTV installation, Wi‑Fi cameras, password reset, sales & fixing. Reliable security solutions in blue & purple futuristic style." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --ngc-primary: 68 88 255;     /* blue */
+      --ngc-secondary: 168 85 247;  /* purple */
+      --glass: 255 255 255 / .08;
+    }
+    html, body { font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+    .hero-gradient {
+      background: radial-gradient(60% 60% at 70% 20%, rgba(99,102,241,.35) 0%, rgba(168,85,247,.25) 30%, rgba(0,0,0,0) 70%),
+                  radial-gradient(40% 40% at 20% 80%, rgba(59,130,246,.35) 0%, rgba(168,85,247,.25) 30%, rgba(0,0,0,0) 70%);
+    }
+    .glass {
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      background: rgba(var(--glass));
+      border: 1px solid rgba(255,255,255,.12);
+      box-shadow: 0 10px 30px rgba(0,0,0,.25), inset 0 0 0 1px rgba(255,255,255,.06);
+    }
+    .glow {
+      box-shadow: 0 0 0 2px rgba(59,130,246,.3), 0 0 35px rgba(168,85,247,.4);
+    }
+    .grad-text { background: linear-gradient(90deg, rgb(var(--ngc-primary)), rgb(var(--ngc-secondary))); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .btn {
+      position: relative;
+      overflow: hidden;
+    }
+    .btn:before {
+      content: "";
+      position: absolute; inset: -1px;
+      background: linear-gradient(90deg, rgba(59,130,246,.7), rgba(168,85,247,.7));
+      filter: blur(12px); opacity: .6; z-index: -1;
+    }
+  </style>
+</head>
+<body class="bg-[#0b0d17] text-white selection:bg-indigo-500/30">
+  <!-- Nav -->
+  <header class="sticky top-0 z-40 backdrop-blur border-b border-white/10 bg-black/30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded-2xl bg-gradient-to-tr from-indigo-500 to-fuchsia-500 grid place-content-center glow">
+          <!-- simple cam icon -->
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="14" height="10" rx="2"/><path d="M17 10l4-2v8l-4-2"/><circle cx="10" cy="12" r="2.5"/></svg>
+        </div>
+        <span class="font-extrabold tracking-tight text-lg">Next.Gen <span class="grad-text">CCTV</span></span>
+      </a>
+      <nav class="hidden md:flex items-center gap-8 text-sm">
+        <a href="#services" class="hover:text-indigo-300">Services</a>
+        <a href="#products" class="hover:text-indigo-300">Wi‑Fi Cameras</a>
+        <a href="#pricing" class="hover:text-indigo-300">Pricing</a>
+        <a href="#contact" class="hover:text-indigo-300">Contact</a>
+        <a href="https://instagram.com/next.gencctv" target="_blank" class="px-3 py-1 rounded-full border border-white/15 hover:border-indigo-400/60">@next.gencctv</a>
+      </nav>
+      <button id="menuBtn" class="md:hidden p-2 rounded-lg border border-white/15" aria-label="Open Menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+    <div id="mobileMenu" class="md:hidden hidden border-t border-white/10 bg-black/60">
+      <div class="max-w-7xl mx-auto px-4 py-3 grid gap-3 text-sm">
+        <a href="#services" class="hover:text-indigo-300">Services</a>
+        <a href="#products" class="hover:text-indigo-300">Wi‑Fi Cameras</a>
+        <a href="#pricing" class="hover:text-indigo-300">Pricing</a>
+        <a href="#contact" class="hover:text-indigo-300">Contact</a>
+        <a href="https://instagram.com/next.gencctv" target="_blank" class="px-3 py-2 rounded-lg border border-white/15">@next.gencctv</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative hero-gradient">
+    <div class="absolute -z-10 inset-0 bg-[radial-gradient(closest-side,rgba(99,102,241,.15),transparent)]"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24 grid lg:grid-cols-2 gap-12 items-center">
+      <div>
+        <h1 class="text-4xl sm:text-5xl font-black leading-tight tracking-tight">
+          Futuristic Security. <span class="grad-text">Crystal‑Clear Vision.</span>
+        </h1>
+        <p class="mt-5 text-white/80 text-base sm:text-lg">We provide CCTV service installation, Wi‑Fi camera sales, password reset, and fixing — fast, reliable, and professional.</p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="#contact" class="btn glow inline-flex items-center gap-2 rounded-2xl px-5 py-3 font-semibold bg-gradient-to-r from-indigo-600 to-fuchsia-600">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+            Get a Free Site Visit
+          </a>
+          <a href="#products" class="inline-flex items-center gap-2 rounded-2xl px-5 py-3 font-semibold border border-white/15 hover:border-indigo-400/60">
+            Browse Wi‑Fi Cameras
+          </a>
+        </div>
+        <div class="mt-6 flex items-center gap-6 text-white/60 text-xs">
+          <div class="flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full bg-green-400 animate-pulse"></span><span>24/7 Support</span></div>
+          <div>Fast Install • Clean Cabling • UAE Coverage</div>
+        </div>
+      </div>
+      <div class="relative">
+        <div class="glass rounded-3xl p-6">
+          <div class="aspect-[16/10] rounded-2xl overflow-hidden border border-white/10 bg-gradient-to-tr from-indigo-900/40 to-fuchsia-900/30 grid place-content-center">
+            <!-- Futuristic camera mock -->
+            <svg viewBox="0 0 300 180" class="w-full h-full">
+              <defs>
+                <linearGradient id="g" x1="0" x2="1">
+                  <stop offset="0%" stop-color="#60a5fa"/>
+                  <stop offset="100%" stop-color="#a78bfa"/>
+                </linearGradient>
+              </defs>
+              <rect x="40" y="50" width="220" height="80" rx="18" fill="url(#g)" opacity="0.25" />
+              <rect x="50" y="60" width="200" height="60" rx="14" fill="#0b0d17" stroke="#8b5cf6" opacity="0.9" />
+              <circle cx="110" cy="90" r="18" fill="#0b0d17" stroke="#60a5fa" stroke-width="3"/>
+              <circle cx="110" cy="90" r="6" fill="#60a5fa"/>
+              <rect x="150" y="74" width="70" height="32" rx="8" fill="#111827" stroke="#60a5fa" opacity=".7"/>
+              <circle cx="245" cy="80" r="5" fill="#22c55e"/>
+            </svg>
+          </div>
+          <div class="mt-4 grid grid-cols-3 gap-3 text-xs text-white/70">
+            <div class="glass rounded-xl p-3 text-center">1080p / 2K / 4K</div>
+            <div class="glass rounded-xl p-3 text-center">Night Vision</div>
+            <div class="glass rounded-xl p-3 text-center">Mobile App</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="relative py-16">
+    <div class="absolute inset-0 -z-10 bg-[radial-gradient(closest-side,rgba(168,85,247,.08),transparent)]"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-extrabold">Our <span class="grad-text">Services</span></h2>
+      <p class="mt-2 text-white/70">End‑to‑end security solutions for home, office, and retail.</p>
+      <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div class="glass rounded-2xl p-5">
+          <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-500 to-fuchsia-500 grid place-content-center mb-4">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M22 8l-6-3-6 3-6-3v11l6 3 6-3 6 3V8z"/></svg>
+          </div>
+          <h3 class="font-bold">CCTV Installation</h3>
+          <p class="mt-1 text-sm text-white/70">Professional setup, coverage planning, and clean cabling.</p>
+        </div>
+        <div class="glass rounded-2xl p-5">
+          <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-500 to-fuchsia-500 grid place-content-center mb-4">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94"/><path d="M9.69 8h11.48"/><path d="M7.38 12l5.74-9.94"/><path d="M6.88 18H18.1"/></svg>
+          </div>
+          <h3 class="font-bold">Wi‑Fi Cameras</h3>
+          <p class="mt-1 text-sm text-white/70">Imou & Ezviz wireless cameras with mobile monitoring.</p>
+        </div>
+        <div class="glass rounded-2xl p-5">
+          <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-500 to-fuchsia-500 grid place-content-center mb-4">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <h3 class="font-bold">Password Reset</h3>
+          <p class="mt-1 text-sm text-white/70">Forgot credentials? We securely reset camera/DVR/NVR passwords.</p>
+        </div>
+        <div class="glass rounded-2xl p-5">
+          <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-500 to-fuchsia-500 grid place-content-center mb-4">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M3 12h18"/><path d="M12 3v18"/></svg>
+          </div>
+          <h3 class="font-bold">Fixing & Support</h3>
+          <p class="mt-1 text-sm text-white/70">Troubleshooting, upgrades, cloud, and mobile app setup.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products / Pricing Cards -->
+  <section id="products" class="relative py-16">
+    <div class="absolute inset-0 -z-10 bg-[radial-gradient(closest-side,rgba(59,130,246,.08),transparent)]"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-extrabold">Featured <span class="grad-text">Wi‑Fi Cameras</span></h2>
+      <p class="mt-2 text-white/70">Blue & purple futuristic selection — ready for instant install.</p>
+
+      <div class="mt-8 grid md:grid-cols-3 gap-6">
+        <!-- Imou Baby Camera -->
+        <article class="glass rounded-3xl p-6 flex flex-col">
+          <div class="aspect-[4/3] rounded-2xl bg-gradient-to-br from-indigo-950/60 to-fuchsia-900/40 border border-white/10 grid place-content-center">
+            <svg width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" class="mx-auto"><circle cx="12" cy="8" r="4"/><path d="M4 20a8 8 0 0 1 16 0Z"/></svg>
+          </div>
+          <h3 class="mt-5 font-bold text-lg">Imou Baby Camera</h3>
+          <p class="text-sm text-white/70">Smart pan/tilt, two‑way audio, night vision.</p>
+          <div class="mt-4 text-2xl font-extrabold"> 999</div>
+          <a href="#contact" class="mt-5 inline-flex justify-center rounded-2xl px-4 py-2 border border-white/15 hover:border-indigo-400/60">Request Install</a>
+        </article>
+
+        <!-- Imou Outdoor Dual Lens -->
+        <article class="glass rounded-3xl p-6 flex flex-col">
+          <div class="aspect-[4/3] rounded-2xl bg-gradient-to-br from-indigo-950/60 to-fuchsia-900/40 border border-white/10 grid place-content-center">
+            <svg width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" class="mx-auto"><rect x="3" y="7" width="14" height="10" rx="2"/><path d="M17 10l4-2v8l-4-2"/><circle cx="10" cy="12" r="2.5"/></svg>
+          </div>
+          <h3 class="mt-5 font-bold text-lg">Imou Outdoor Dual Lens</h3>
+          <p class="text-sm text-white/70">Dual‑view coverage, weatherproof, smart alerts.</p>
+          <div class="mt-4 text-2xl font-extrabold"> 2,999</div>
+          <a href="#contact" class="mt-5 inline-flex justify-center rounded-2xl px-4 py-2 border border-white/15 hover:border-indigo-400/60">Request Install</a>
+        </article>
+
+        <!-- Ezviz Wi‑Fi Camera -->
+        <article class="glass rounded-3xl p-6 flex flex-col">
+          <div class="aspect-[4/3] rounded-2xl bg-gradient-to-br from-indigo-950/60 to-fuchsia-900/40 border border-white/10 grid place-content-center">
+            <svg width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" class="mx-auto"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3 class="mt-5 font-bold text-lg">Ezviz Wi‑Fi Camera</h3>
+          <p class="text-sm text-white/70">Compact design, motion detection, easy app.</p>
+          <div class="mt-4 text-2xl font-extrabold"> 1,599</div>
+          <a href="#contact" class="mt-5 inline-flex justify-center rounded-2xl px-4 py-2 border border-white/15 hover:border-indigo-400/60">Request Install</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing for Services -->
+  <section id="pricing" class="relative py-16">
+    <div class="absolute inset-0 -z-10 bg-[radial-gradient(closest-side,rgba(99,102,241,.08),transparent)]"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-extrabold">Transparent <span class="grad-text">Pricing</span></h2>
+      <p class="mt-2 text-white/70">Straightforward rates for common services.</p>
+      <div class="mt-8 grid md:grid-cols-2 gap-6">
+        <div class="glass rounded-3xl p-6">
+          <h3 class="font-bold text-lg">Camera Password Reset</h3>
+          <p class="mt-1 text-sm text-white/70">Secure reset for CCTV / Wi‑Fi cameras / DVR / NVR.</p>
+          <div class="mt-3 text-3xl font-extrabold"> 199</div>
+          <a href="#contact" class="mt-5 inline-flex items-center gap-2 rounded-2xl px-4 py-2 border border-white/15 hover:border-indigo-400/60">
+            Book Now
+          </a>
+        </div>
+        <div class="glass rounded-3xl p-6">
+          <h3 class="font-bold text-lg">Standard Installation</h3>
+          <p class="mt-1 text-sm text-white/70">Site survey, mounting, cabling, app setup. (Custom quote)</p>
+          <div class="mt-3 text-3xl font-extrabold">From  299</div>
+          <a href="#contact" class="mt-5 inline-flex items-center gap-2 rounded-2xl px-4 py-2 border border-white/15 hover:border-indigo-400/60">
+            Get Quote
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="relative py-16">
+    <div class="absolute inset-0 -z-10 bg-[radial-gradient(closest-side,rgba(168,85,247,.08),transparent)]"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-8 items-start">
+        <div class="glass rounded-3xl p-6">
+          <h2 class="text-3xl font-extrabold">Get in <span class="grad-text">Touch</span></h2>
+          <p class="mt-2 text-white/70">Tell us what you need. We’ll respond quickly.</p>
+
+          <ul class="mt-6 space-y-3 text-sm text-white/80">
+            <li class="flex items-center gap-3">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M22 16.92V21a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2 5.18 2 2 0 0 1 4 3h4.09a2 2 0 0 1 2 1.72c.12.9.3 1.77.54 2.63a2 2 0 0 1-.45 2.11L9 10a16 16 0 0 0 6 6l.54-1.18a2 2 0 0 1 2.11-.45c.86.24 1.73.42 2.63.54A2 2 0 0 1 22 16.92Z"/></svg>
+              <span><strong>Phone:</strong> <em class="text-white/60">7092857509</em></span>
+            </li>
+            <li class="flex items-center gap-3">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="M22 6l-10 7L2 6"/></svg>
+              <span><strong>Email:</strong> <em class="text-white/60">anbu13571@gmail.com</em></span>
+            </li>
+            <li class="flex items-center gap-3">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M16 8a6 6 0 0 1-6 6H7v3a3 3 0 0 0 3 3h4"/><path d="M12 2a6 6 0 0 0-6 6v4h6a6 6 0 0 0 6-6 6 6 0 0 0-6-6Z"/></svg>
+              <span><strong>Instagram:</strong> <a class="underline hover:text-indigo-300" href="https://instagram.com/next.gencctv" target="_blank">@next.gencctv</a></span>
+            </li>
+          </ul>
+
+          <form class="mt-6 grid gap-3" onsubmit="submitForm(event)">
+            <div class="grid sm:grid-cols-2 gap-3">
+              <input class="glass rounded-xl px-4 py-3 outline-none" placeholder="Your name" required />
+              <input class="glass rounded-xl px-4 py-3 outline-none" placeholder="Phone or email" required />
+            </div>
+            <textarea class="glass rounded-xl px-4 py-3 outline-none min-h-[120px]" placeholder="Tell us about your site (villa/apartment/office) & services needed" required></textarea>
+            <button class="btn glow rounded-2xl px-5 py-3 font-semibold bg-gradient-to-r from-indigo-600 to-fuchsia-600 w-fit">Send Request</button>
+          </form>
+          <p id="formMsg" class="mt-3 text-sm text-white/70 hidden">Thanks! Your request is noted (demo form).</p>
+        </div>
+
+        <div class="grid gap-6">
+          <div class="glass rounded-3xl p-6">
+            <h3 class="font-bold text-lg">Why Choose Next.Gen CCTV?</h3>
+            <ul class="mt-3 list-disc list-inside text-sm text-white/80 space-y-1">
+              <li>Clean, professional installation with warranty.</li>
+              <li>Fast password resets & on‑site support.</li>
+              <li>Blue & purple futuristic design for modern brands.</li>
+              <li>INDIA coverage • Same‑day appointments where available.</li>
+            </ul>
+          </div>
+          <div class="glass rounded-3xl p-6">
+            <h3 class="font-bold text-lg">Accepted Payments</h3>
+            <p class="mt-2 text-sm text-white/70">Cash • Card • Bank Transfer</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/10 py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p class="text-xs text-white/60">© <span id="year"></span> Next.Gen CCTV — All rights reserved.</p>
+      <div class="text-xs text-white/60">Blue & Purple Futuristic Theme</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuBtn?.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+    function submitForm(e){ e.preventDefault(); document.getElementById('formMsg').classList.remove('hidden'); }
+  </script>
+</body>
+</html>
